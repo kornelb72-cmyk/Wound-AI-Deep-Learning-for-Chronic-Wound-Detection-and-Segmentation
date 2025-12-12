@@ -1,6 +1,6 @@
 clear; clc; close all;
 
-rootFolder='D:/DeepLearning';
+rootFolder='D:/DeepLearning'; %%OWN PATH
 numFolds=10;
 classNames=["background","wound"];
 labelIDs=[1 2];
