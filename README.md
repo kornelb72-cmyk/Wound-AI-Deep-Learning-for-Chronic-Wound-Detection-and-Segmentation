@@ -31,8 +31,8 @@ The MODELS directory stores all trained segmentation models produced by the scri
 The MODELS_EVALUATIONS directory contains MATLAB scripts used to evaluate and visualize the trained models from **MODELS**.<br>
 
 **For each model family there is a dedicated subfolder**:<br>
-**- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_SGDM**,<br>
 **- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_ADAM**,<br>
+**- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_SGDM**,<br>
 **- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_HSV_IR_ADAM**,<br>
 **- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_HSV_IR_SGDM**,<br>
 **- MODELS_EVALUATIONS/SEGNET_VGG19_RGB**,<br>
