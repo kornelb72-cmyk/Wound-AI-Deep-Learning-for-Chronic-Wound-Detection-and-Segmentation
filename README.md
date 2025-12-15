@@ -17,8 +17,8 @@ The MODELS directory stores all trained segmentation models produced by the scri
 **The scripts in the TRAINING folder create this directory along with the corresponding subfolders for each architecture and modality.**
 
 **For each architecture and modality there is a dedicated subfolder**:<br>
-**- MODELS/DEEPLAB_ResNet50_RGB_SGDM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB images with SGDM optimizer.<br>
 **- MODELS/DEEPLAB_ResNet50_RGB_ADAM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB images with ADAM optimizer.<br>
+**- MODELS/DEEPLAB_ResNet50_RGB_SGDM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB images with SGDM optimizer.<br>
 **- MODELS/DEEPLAB_ResNet50_RGB_HSV_IR_ADAM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB + HSV + IR channels with ADAM optimizer.<br>
 **- MODELS/DEEPLAB_ResNet50_RGB_HSV_IR_SGDM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB + HSV + IR channels with SGDM optimizer.<br>
 **- MODELS/SEGNET_VGG19_RGB** - SegNet (VGG-19 backbone) trained on RGB images with ADAM optimizer.<br>
