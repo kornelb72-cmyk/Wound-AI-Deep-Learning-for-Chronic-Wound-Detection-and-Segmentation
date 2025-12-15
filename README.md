@@ -1,8 +1,9 @@
 # Wound-AI-Deep-Learning-for-Chronic-Wound-Detection-and-Segmentation
 
 **TRAINING folder**:<br>
+
 The TRAINING directory contains MATLAB scripts used to train all segmentation networks (DeepLabV3+, SegNet and U-Net) for
-different image modalities (RGB, RGB+HSV+IR). Each training script saves the trained network (net) and optional training information (info) into the MODELS directory as a **.mat file** (one file per fold).
+different image modalities (RGB, RGB + HSV + IR). Each training script saves the trained network (net) and optional training information (info) into the **MODELS** directory as a **.mat file** (one file per fold).
 
 For **UNET_DICE_LOSS_RGB and UNET_DICE_LOSS_RGB_HSV_IR** specifically, the subfolders contain:<br>
 **- main scripts: train_save_model_UNET_RGB.m and train_save_model_UNET_RGB_HSV_IR.m** - the main training script for the U-Net with Dice loss that should be executed,<br>
