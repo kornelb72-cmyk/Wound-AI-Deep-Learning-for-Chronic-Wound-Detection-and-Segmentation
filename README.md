@@ -12,7 +12,7 @@ For **UNET_DICE_LOSS_RGB and UNET_DICE_LOSS_RGB_HSV_IR** specifically, the subfo
 
 **MODELS folder**:<br>
 
-The MODELS directory stores all trained segmentation models produced by the scripts in TRAINING.<br>
+The MODELS directory stores all trained segmentation models produced by the scripts in **TRAINING** folder.<br>
 **The MODELS directory is created automatically during the training process**:<br>
 **The scripts in the TRAINING folder create this directory along with the corresponding subfolders for each architecture and modality.**
 
