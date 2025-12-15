@@ -1,6 +1,6 @@
 # Wound-AI-Deep-Learning-for-Chronic-Wound-Detection-and-Segmentation
 
-1. TRAINING folder:<br>
+1.** TRAINING folder**:<br>
 The TRAINING directory contains MATLAB scripts used to train all segmentation networks (DeepLabV3+, SegNet and U-Net) for
 different image modalities (RGB, RGB+HSV+IR). Each training script saves the trained network (net) and optional training information (info) into the MODELS directory as a **.mat file** (one file per fold).
 
@@ -9,7 +9,7 @@ For **UNET_DICE_LOSS_RGB and UNET_DICE_LOSS_RGB_HSV_IR** specifically, the subfo
 **- helpers: diceLossLayer.m** - a custom MATLAB layer that implements the Dice Loss function and is required by the U-Net Dice-Loss models during training.
 
 
-2. MODELS folder:<br>
+2. **MODELS folder**:<br>
 The MODELS directory stores all trained segmentation models produced by the scripts in TRAINING.<br>
 **The MODELS directory is created automatically during the training process**:<br>
 **The scripts in the TRAINING folder create this directory along with the corresponding subfolders for each architecture and modality.**
@@ -24,7 +24,7 @@ The MODELS directory stores all trained segmentation models produced by the scri
 **- MODELS/UNET_DICE_LOSS_RGB**- U-Net trained on RGB images with with a custom MATLAB Dice Loss layer.<br>
 **- MODELS/UNET_DICE_LOSS_RGB_HSV_IR** - U-Net trained on RGB + HSV + IR channels with a custom MATLAB Dice Loss layer.<br>
 
-3. MODELS_EVALUATIONS folder:<br>
+3. **MODELS_EVALUATIONS folder**:<br>
 The MODELS_EVALUATIONS directory contains MATLAB scripts used to evaluate and visualize the trained models from **MODELS**.<br>
 **For each model family there is a dedicated subfolder**:<br>
 **- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_SGDM**,<br>
@@ -36,7 +36,7 @@ The MODELS_EVALUATIONS directory contains MATLAB scripts used to evaluate and vi
 **- MODELS_EVALUATIONS/UNET_DICE_LOSS_RGB**,<br>
 **- MODELS_EVALUATIONS/UNET_DICE_LOSS_RGB_HSV_IR**.<br>
 
-4. GradCAM folder:<br>
+4. **GradCAM folder**:<br>
 The GradCAM directory stores Gradient-weighted Class Activation Map (Grad-CAM) visualizations generated for the trained models, helping to interpret<br>
 which image regions contributed most to the model’s predictions. The trained models are always loaded directly from the corresponding subfolders inside the **MODELS** directory.<br>
 For each model family there is a dedicated subfolder:<br>
