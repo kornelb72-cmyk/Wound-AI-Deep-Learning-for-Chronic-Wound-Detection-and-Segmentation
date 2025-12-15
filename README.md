@@ -14,27 +14,27 @@ The MODELS directory stores all trained segmentation models produced by the scri
 **The MODELS directory is created automatically during the training process**:
 **The scripts in the TRAINING folder create this directory along with the corresponding subfolders for each architecture and modality.**
 
-**For each architecture and modality there is a dedicated subfolder:
-- MODELS/DEEPLAB_ResNet50_RGB_SGDM - DeepLabV3+ (ResNet-50 backbone) trained on RGB images with SGDM optimizer.
-- MODELS/DEEPLAB_ResNet50_RGB_ADAM - DeepLabV3+ (ResNet-50 backbone) trained on RGB images with ADAM optimizer.
-- MODELS/DEEPLAB_ResNet50_RGB_HSV_IR_ADAM - DeepLabV3+ (ResNet-50 backbone) trained on RGB + HSV + IR channels with ADAM optimizer.
-- MODELS/DEEPLAB_ResNet50_RGB_HSV_IR_SGDM - DeepLabV3+ (ResNet-50 backbone) trained on RGB + HSV + IR channels with SGDM optimizer.
-- MODELS/SEGNET_VGG19_RGB - SegNet (VGG-19 backbone) trained on RGB images with ADAM optimizer.
-- MODELS/SEGNET_VGG19_RGB_HSV_IR - SegNet with VGG-19 encoder trained on  RGB + HSV + IR channels with ADAM optimizer.
-- MODELS/UNET_DICE_LOSS_RGB - U-Net trained on RGB images with with a custom MATLAB Dice Loss layer.
-- MODELS/UNET_DICE_LOSS_RGB_HSV_IR - U-Net trained on RGB + HSV + IR channels with a custom MATLAB Dice Loss layer.**
+**For each architecture and modality there is a dedicated subfolder:**
+**- MODELS/DEEPLAB_ResNet50_RGB_SGDM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB images with SGDM optimizer.
+**- MODELS/DEEPLAB_ResNet50_RGB_ADAM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB images with ADAM optimizer.
+**- MODELS/DEEPLAB_ResNet50_RGB_HSV_IR_ADAM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB + HSV + IR channels with ADAM optimizer.
+**- MODELS/DEEPLAB_ResNet50_RGB_HSV_IR_SGDM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB + HSV + IR channels with SGDM optimizer.
+**- MODELS/SEGNET_VGG19_RGB** - SegNet (VGG-19 backbone) trained on RGB images with ADAM optimizer.
+**- MODELS/SEGNET_VGG19_RGB_HSV_IR** - SegNet with VGG-19 encoder trained on  RGB + HSV + IR channels with ADAM optimizer.
+**- MODELS/UNET_DICE_LOSS_RGB**- U-Net trained on RGB images with with a custom MATLAB Dice Loss layer.
+**- MODELS/UNET_DICE_LOSS_RGB_HSV_IR** - U-Net trained on RGB + HSV + IR channels with a custom MATLAB Dice Loss layer.
 
 3. MODELS_EVALUATIONS folder:
 The MODELS_EVALUATIONS directory contains MATLAB scripts used to evaluate and visualize the trained models from **MODELS**.
-**For each model family there is a dedicated subfolder:
-- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_SGDM,
-- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_ADAM,
-- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_HSV_IR_ADAM,
-- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_HSV_IR_SGDM,
-- MODELS_EVALUATIONS/SEGNET_VGG19_RGB,
-- MODELS_EVALUATIONS/SEGNET_VGG19_RGB_HSV_IR,
-- MODELS_EVALUATIONS/UNET_DICE_LOSS_RGB,
-- MODELS_EVALUATIONS/UNET_DICE_LOSS_RGB_HSV_IR.**
+**For each model family there is a dedicated subfolder:**
+**- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_SGDM**,
+**- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_ADAM**,
+**- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_HSV_IR_ADAM**,
+**- MODELS_EVALUATIONS/DEEPLAB_ResNet50_RGB_HSV_IR_SGDM**,
+**- MODELS_EVALUATIONS/SEGNET_VGG19_RGB**,
+**- MODELS_EVALUATIONS/SEGNET_VGG19_RGB_HSV_IR**,
+**- MODELS_EVALUATIONS/UNET_DICE_LOSS_RGB**,
+**- MODELS_EVALUATIONS/UNET_DICE_LOSS_RGB_HSV_IR**.
 
 4. GradCAM folder:
 The GradCAM directory stores Gradient-weighted Class Activation Map (Grad-CAM) visualizations generated for the trained models, helping to interpret
