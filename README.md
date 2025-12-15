@@ -42,8 +42,7 @@ The MODELS_EVALUATIONS directory contains MATLAB scripts used to evaluate and vi
 
 **GradCAM folder**:<br>
 
-The GradCAM directory stores Gradient-weighted Class Activation Map (Grad-CAM) visualizations generated for the trained models, helping to interpret<br>
-which image regions contributed most to the model’s predictions. The trained models are always loaded directly from the corresponding subfolders inside the **MODELS** directory.<br>
+The GradCAM directory stores Gradient-weighted Class Activation Map (Grad-CAM) visualizations generated for the trained models, helping to interpret which image regions contributed most to the model’s predictions. The trained models are always loaded directly from the corresponding subfolders inside the **MODELS** directory.<br>
 
 **For each model family there is a dedicated subfolder**:<br>
 **- helper: GradCAM/DEEPLAB_ResNet50_RGB_ADAM/gradCAM_segmentation.m** - a helper function that computes Grad-CAM heatmaps for a given trained segmentation network and input image,<br>
