@@ -23,8 +23,8 @@ The MODELS directory stores all trained segmentation models produced by the scri
 **- MODELS/DEEPLAB_ResNet50_RGB_HSV_IR_SGDM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB + HSV + IR channels with SGDM optimizer.<br>
 **- MODELS/SEGNET_VGG19_RGB** - SegNet (VGG-19 backbone) trained on RGB images with ADAM optimizer.<br>
 **- MODELS/SEGNET_VGG19_RGB_HSV_IR** - SegNet (VGG-19 backbone) trained on  RGB + HSV + IR channels with ADAM optimizer.<br>
-**- MODELS/UNET_DICE_LOSS_RGB**- U-Net trained on RGB images with with a custom MATLAB Dice Loss layer.<br>
-**- MODELS/UNET_DICE_LOSS_RGB_HSV_IR** - U-Net trained on RGB + HSV + IR channels with a custom MATLAB Dice Loss layer.<br>
+**- MODELS/UNET_DICE_LOSS_RGB**- U-Net trained on RGB images with with a custom MATLAB Dice Loss layer and ADAM optimizer.<br>
+**- MODELS/UNET_DICE_LOSS_RGB_HSV_IR** - U-Net trained on RGB + HSV + IR channels with a custom MATLAB Dice Loss layer and ADAM optimizer.<br>
 
 **MODELS_EVALUATIONS folder**:<br>
 
