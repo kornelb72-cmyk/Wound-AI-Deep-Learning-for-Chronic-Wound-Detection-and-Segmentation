@@ -71,3 +71,6 @@ The GradCAM directory stores Gradient-weighted Class Activation Map (Grad-CAM) v
 **- helper: GradCAM/UNET_DICE_LOSS_RGB_HSV_IR/gradCAM_unet.m** - a helper function that computes Grad-CAM heatmaps for a given trained segmentation network and input image,<br>
 **- main script: GradCAM/UNET_DICE_LOSS_RGB_HSV_IR/GradCAM_unet_dice_loss_RGB_HSV_IR.m** - the main script that should be executed.
 
+**DEMO folder**:<br>
+The DEMO directory 
+
