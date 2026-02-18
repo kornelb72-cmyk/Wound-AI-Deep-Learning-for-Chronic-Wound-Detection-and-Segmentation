@@ -30,7 +30,7 @@ title('Prediction');
 
 maskWound = (C == "wound");
 predMaskGray = uint8(maskWound) * 255;
-imwrite(predMaskGray, fullfile(rootFolder,'case_6_1_1_pred_mask_gray.png'));
+imwrite(predMaskGray, fullfile(rootFolder,'case_6_1_1_prediction_mask.png'));
 
 function I = readAndPreprocessImage(filename, inputSize)
     I = imread(filename);
