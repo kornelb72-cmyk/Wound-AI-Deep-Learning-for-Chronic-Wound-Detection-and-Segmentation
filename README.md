@@ -20,23 +20,6 @@ For **UNET_DICE_LOSS_RGB and UNET_DICE_LOSS_RGB_HSV_IR** specifically, the subfo
 **- main scripts: train_save_model_UNET_RGB.m and train_save_model_UNET_RGB_HSV_IR.m** - the main training script for the U-Net with Dice loss that should be executed,<br>
 **- helpers: diceLossLayer.m** - a custom MATLAB layer that implements the Dice Loss function and is required by the U-Net Dice-Loss models during training.
 
-
-**MODELS folder**:<br>
-
-The MODELS directory stores all trained segmentation models produced by the scripts in **TRAINING** folder.<br>
-**The MODELS directory is created automatically during the training process**:<br>
-**The scripts in the TRAINING folder create this directory along with the corresponding subfolders for each architecture and modality.**
-
-**For each architecture and modality there is a dedicated subfolder**:<br>
-**- MODELS/DEEPLAB_ResNet50_RGB_ADAM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB images with ADAM optimizer.<br>
-**- MODELS/DEEPLAB_ResNet50_RGB_SGDM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB images with SGDM optimizer.<br>
-**- MODELS/DEEPLAB_ResNet50_RGB_HSV_IR_ADAM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB + HSV + IR channels with ADAM optimizer.<br>
-**- MODELS/DEEPLAB_ResNet50_RGB_HSV_IR_SGDM** - DeepLabV3+ (ResNet-50 backbone) trained on RGB + HSV + IR channels with SGDM optimizer.<br>
-**- MODELS/SEGNET_VGG19_RGB** - SegNet (VGG-19 backbone) trained on RGB images with ADAM optimizer.<br>
-**- MODELS/SEGNET_VGG19_RGB_HSV_IR** - SegNet (VGG-19 backbone) trained on  RGB + HSV + IR channels with ADAM optimizer.<br>
-**- MODELS/UNET_DICE_LOSS_RGB**- U-Net trained on RGB images with with a custom MATLAB Dice Loss layer and ADAM optimizer.<br>
-**- MODELS/UNET_DICE_LOSS_RGB_HSV_IR** - U-Net trained on RGB + HSV + IR channels with a custom MATLAB Dice Loss layer and ADAM optimizer.<br>
-
 **MODELS_EVALUATIONS folder**:<br>
 
 The MODELS_EVALUATIONS directory contains MATLAB scripts used to evaluate and visualize the trained models from **MODELS**.<br>
