@@ -1,5 +1,16 @@
 # Wound-AI-Deep-Learning-for-Chronic-Wound-Detection-and-Segmentation
 
+**DEMO folder**:<br>
+The DEMO directory contains a minimal, self-contained example for training and visualizing semantic segmentation on a single image-mask pair. It is intended for quick sanity checks (pipeline correctness, label mapping, output saving) and for demonstrating how to load a saved model and generate predictions without running the full cross-validation training.<br><br> 
+
+**What DEMO provides**:<br>
+**- train_demo.m** - single-sample training (1 RGB image + 1 GT mask) using DeepLabV3+ architecture with ResNet-50 backbone trained with the ADAM optimizer; after training, the script exports the trained network to a .mat file (net + info) so the same model can be reused later without retraining,<br>
+**- visualize_demo.m** - visualization script that loads the previously saved .mat model (net + info), runs semantic segmentation prediction for the selected RGB image and generates prediction outputs (mask/outline/overlay),<br>
+**- case_6_1_1_rgb.png** - RGB sample input image used for training and prediction,<br>
+**- case_6_1_1_gt.png** - GT mask containing pixel-wise annotations for background and wound regions,<br>
+**- case_6_1_1_prediction_mask.png** - predicted segmentation mask, saved in viewable grayscale,<br>
+**- case_6_1_1_overlay.png** - overlay visualization on the original image.
+
 **TRAINING folder**:<br>
 
 The TRAINING directory contains MATLAB scripts used to train all segmentation networks (DeepLabV3+, SegNet and U-Net) for
@@ -70,14 +81,3 @@ The GradCAM directory stores Gradient-weighted Class Activation Map (Grad-CAM) v
 **- helper: GradCAM/UNET_DICE_LOSS_RGB_HSV_IR/diceLossLayer.m** - a custom MATLAB layer that computes the Dice loss for the segmentation output and the ground-truth mask,<br>
 **- helper: GradCAM/UNET_DICE_LOSS_RGB_HSV_IR/gradCAM_unet.m** - a helper function that computes Grad-CAM heatmaps for a given trained segmentation network and input image,<br>
 **- main script: GradCAM/UNET_DICE_LOSS_RGB_HSV_IR/GradCAM_unet_dice_loss_RGB_HSV_IR.m** - the main script that should be executed.
-
-**DEMO folder**:<br>
-The DEMO directory contains a minimal, self-contained example for training and visualizing semantic segmentation on a single image-mask pair. It is intended for quick sanity checks (pipeline correctness, label mapping, output saving) and for demonstrating how to load a saved model and generate predictions without running the full cross-validation training.<br><br> 
-
-**What DEMO provides**:<br>
-**- train_demo.m** - single-sample training (1 RGB image + 1 GT mask) using DeepLabV3+ architecture with ResNet-50 backbone trained with the ADAM optimizer; after training, the script exports the trained network to a .mat file (net + info) so the same model can be reused later without retraining,<br>
-**- visualize_demo.m** - visualization script that loads the previously saved .mat model (net + info), runs semantic segmentation prediction for the selected RGB image and generates prediction outputs (mask/outline/overlay),<br>
-**- case_6_1_1_rgb.png** - RGB sample input image used for training and prediction,<br>
-**- case_6_1_1_gt.png** - GT mask containing pixel-wise annotations for background and wound regions,<br>
-**- case_6_1_1_prediction_mask.png** - predicted segmentation mask, saved in viewable grayscale,<br>
-**- case_6_1_1_overlay.png** - overlay visualization on the original image.
