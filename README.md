@@ -1,4 +1,5 @@
 # Wound-AI-Deep-Learning-for-Chronic-Wound-Detection-and-Segmentation
+**Create_RGB_HSV_IR.m** - a script that creates combined RGB-HSV-IR 3-channel images by converting each modality to grayscale, concatenating the channels, and saving results per Fold/case.
 
 **DEMO folder**:<br>
 The DEMO directory contains a minimal, self-contained example for training and visualizing semantic segmentation on a single image-mask pair. It is intended for quick sanity checks (pipeline correctness, label mapping, output saving) and for demonstrating how to load a saved model and generate predictions without running the full cross-validation training.<br><br> 
